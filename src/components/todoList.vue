@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header style="text-align: right; font-size: 12px">
+      <el-header style="text-align: right; font-size: 12px;">
+        <router-link to="/list"><i class="el-icon-arrow-left" style="font-size:20px;float:left;line-height: 60px;"></i></router-link>
         <router-link to="/list/form"><i class="el-icon-plus" style="margin-right: 15px;font-size:20px"></i></router-link>
       </el-header>
       <el-main><router-view ></router-view></el-main>

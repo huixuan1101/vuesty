@@ -38,7 +38,7 @@ export default {
  .el-header, .el-footer {
     background-color: #FFF;
     color: #333;
-    text-align: center;
+    text-align: right;
     line-height: 60px;
   }
   

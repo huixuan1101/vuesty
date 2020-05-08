@@ -48,7 +48,7 @@ export default {
   },
   methods:{
     handleClick(row) {
-      this.$router.push({'path':'/content/'+row.userId});
+      this.$router.push({'path':'list/content/'+row.userId});
       console.log(row);
     },
     getContent(id){

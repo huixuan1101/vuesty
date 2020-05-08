@@ -15,10 +15,6 @@ const routes = [
         component: Home
      },
   { 
-    path: '/content/:id', 
-    component: Content
- },
-  { 
     path: '/home', 
     component: Home
  },
@@ -38,6 +34,10 @@ const routes = [
         {
           path: 'form',
           component: Form
+        },
+        {
+          path: 'content/:id',
+          component: Content
         },
       ]
  },
