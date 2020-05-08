@@ -5,7 +5,6 @@
         <el-dropdown>
           <i class="el-icon-setting" style="margin-right: 15px"></i>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item><router-link to="/list/list">list</router-link></el-dropdown-item>
             <el-dropdown-item><router-link to="/list/axios">axios---列表</router-link></el-dropdown-item>
             <el-dropdown-item><router-link to="/list/form">form---添加</router-link></el-dropdown-item>
           </el-dropdown-menu>

@@ -6,8 +6,9 @@ import Home from '../components/HelloWorld';
 import List from '../components/todoList';
 import Son from '../components/FatherToSon';
 import Ax from '../components/List/axios';
-import Li from '../components/List/list';
+import Todo from '../components/List/list';
 import Form from '../components/List/form';
+
 const routes = [
     { 
         path: '/', 
@@ -35,10 +36,6 @@ const routes = [
           component: Ax
         },
         {
-          path: 'list',
-          component: Li
-        },
-        {
           path: 'form',
           component: Form
         },
@@ -48,6 +45,10 @@ const routes = [
     path: '/son', 
     component: Son
  },
+ { 
+  path: '/todo', 
+  component: Todo
+},
 {
   path:'/*',
   redirect:'/home'

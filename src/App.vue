@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <el-container>
-      <el-aside width="200px">Aside</el-aside>
+      <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
+        <v-menu></v-menu>
+      </el-aside>
+
+
       <el-container>
         <el-header><v-header></v-header></el-header>
         <el-main><router-view></router-view></el-main>
@@ -13,6 +17,7 @@
 
 <script>
 import Header from  './components/common/header';
+import Menu from  './components/common/left';
 export default {
   name: 'App',
   data(){
@@ -22,6 +27,7 @@ export default {
   },
   components: {
     'v-header':Header,
+    'v-menu':Menu
   }
 
 }
@@ -64,4 +70,13 @@ export default {
   .el-container:nth-child(7) .el-aside {
     line-height: 320px;
   }
+
+  .router-link-active {     
+   text-decoration: none;
+ }
+ 
+ a {
+   text-decoration: none; 
+ }
+
 </style>
