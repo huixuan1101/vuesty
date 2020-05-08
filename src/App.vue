@@ -1,15 +1,13 @@
 <template>
   <div id="app">
     <el-container>
-      <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-        <v-menu></v-menu>
-      </el-aside>
-
-
+      <el-header><v-header></v-header></el-header>
       <el-container>
-        <el-header><v-header></v-header></el-header>
-        <el-main><router-view></router-view></el-main>
-        <el-footer>Footer</el-footer>
+        <el-aside width="200px" style="background-color: rgb(238, 241, 246)"><v-menu></v-menu></el-aside>
+        <el-container>
+          <el-main><router-view></router-view></el-main>
+          <el-footer>Footer</el-footer>
+        </el-container>
       </el-container>
     </el-container>
   </div>

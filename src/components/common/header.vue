@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <el-menu class="el-menu-demo" mode="horizontal" >
-      <el-menu-item index="1"><router-link to="/home">home</router-link></el-menu-item>
-      <el-menu-item index="2"><router-link to="/list">list</router-link></el-menu-item>
-      <el-menu-item index="3"><router-link to="/son">son</router-link></el-menu-item>
-    </el-menu>
+      <el-dropdown>
+        <i class="el-icon-setting" style="margin-right: 15px"></i>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item><router-link to="/list/axios">axios---列表</router-link></el-dropdown-item>
+          <el-dropdown-item><router-link to="/list/form">form---添加</router-link></el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      <span>王小虎</span>
   </div>
 </template>
 
@@ -26,8 +29,13 @@ export default {
 
 <style scoped>
   
-    a{
-      display: block;
-    }  
+  .el-header {
+    background-color: #B3C0D1;
+    color: #333;
+    line-height: 60px;
+  }
+  .el-main {
+    line-height: 60px;
+  } 
   
 </style>
